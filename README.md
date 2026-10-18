@@ -77,9 +77,14 @@ Pick one type. If the change mixes types, pick the type of the main change.
 | `.claude-plugin/plugin.json` | The plugin name, version and description. |
 | `.claude-plugin/marketplace.json` | Lists the plugin, so this repo works as a marketplace. |
 | `README.md` | This doc, for people. Claude does not load it. |
+| `LICENSE` | The MIT license. |
 
 ## Release a new version
 
 1. Change `skills/commit-message/SKILL.md`.
 2. Raise `version` in `.claude-plugin/plugin.json` and in `.claude-plugin/marketplace.json`. Keep both the same.
 3. Commit and push. Developers get the change when they update the marketplace.
+
+## License
+
+[MIT](LICENSE)

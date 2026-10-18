@@ -5,5 +5,6 @@
   "author": {
     "name": "Arash Manteghi"
   },
+  "license": "MIT",
   "keywords": ["git", "commit", "commit-message", "conventional-commits"]
 }
