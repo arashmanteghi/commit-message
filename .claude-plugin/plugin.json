@@ -1,6 +1,6 @@
 {
   "name": "commit-message",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Suggest a commit message for staged or unstaged git changes, in the format <TICKET> <type>: <subject>.",
   "author": {
     "name": "Arash Manteghi"
