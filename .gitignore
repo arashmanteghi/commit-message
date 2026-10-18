@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows / Linux
+Thumbs.db
+Desktop.ini
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code local (per-user) settings
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python (helper scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node (helper scripts)
+node_modules/
+npm-debug.log*
+
+# Build output and packaged skills
+dist/
+build/
+*.zip
+*.skill
+
+# Logs and scratch
+*.log
+tmp/
+.tmp/
