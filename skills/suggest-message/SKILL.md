@@ -1,5 +1,5 @@
 ---
-name: commit-message
+name: suggest-message
 description: Suggest a commit message for staged or unstaged git changes. Use when the user asks for a commit message.
 argument-hint: "[staged|unstaged]"
 allowed-tools: Bash(git diff:*), Bash(git status:*), Bash(git branch:*)
