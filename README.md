@@ -1,17 +1,34 @@
-# commit-message skill
+# commit-message plugin
 
-A Claude Code skill. It suggests a commit message for your git changes.
+A Claude Code plugin. It suggests a commit message for your git changes.
 It only suggests. It never commits and never changes files.
 
-It works in all projects, because it lives in `~/.claude/skills/`.
+## Install
+
+In Claude Code, run:
+
+```
+/plugin install commit-message --marketplace arashmanteghi/commit-message
+```
+
+On Claude Code versions older than 2.1.275, add the marketplace first, then install:
+
+```
+/plugin marketplace add arashmanteghi/commit-message
+/plugin install commit-message@commit-message-marketplace
+```
+
+The plugin works in all your projects once it is installed.
+
+To get a newer version, run `/plugin marketplace update commit-message-marketplace`.
 
 ## Commands
 
 | Command | What it reads |
 |---|---|
-| `/commit-message` | Staged changes (the default) |
-| `/commit-message staged` | Staged changes |
-| `/commit-message unstaged` | Unstaged changes |
+| `/commit-message:commit-message` | Staged changes (the default) |
+| `/commit-message:commit-message staged` | Staged changes |
+| `/commit-message:commit-message unstaged` | Unstaged changes |
 
 You can also just ask "suggest a commit message". Claude may use the skill without the slash command.
 
@@ -56,5 +73,13 @@ Pick one type. If the change mixes types, pick the type of the main change.
 
 | File | Purpose |
 |---|---|
-| `SKILL.md` | The instructions Claude follows. Edit this to change the rules. |
+| `skills/commit-message/SKILL.md` | The instructions Claude follows. Edit this to change the rules. |
+| `.claude-plugin/plugin.json` | The plugin name, version and description. |
+| `.claude-plugin/marketplace.json` | Lists the plugin, so this repo works as a marketplace. |
 | `README.md` | This doc, for people. Claude does not load it. |
+
+## Release a new version
+
+1. Change `skills/commit-message/SKILL.md`.
+2. Raise `version` in `.claude-plugin/plugin.json` and in `.claude-plugin/marketplace.json`. Keep both the same.
+3. Commit and push. Developers get the change when they update the marketplace.

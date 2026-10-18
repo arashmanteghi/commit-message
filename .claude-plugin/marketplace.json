@@ -1,0 +1,15 @@
+{
+  "name": "commit-message-marketplace",
+  "description": "Claude Code plugin that suggests commit messages in the team format.",
+  "owner": {
+    "name": "Arash Manteghi"
+  },
+  "plugins": [
+    {
+      "name": "commit-message",
+      "source": "./",
+      "description": "Suggest a commit message for staged or unstaged git changes, in the format <TICKET> <type>: <subject>.",
+      "version": "1.0.0"
+    }
+  ]
+}
